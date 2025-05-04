@@ -14,7 +14,6 @@ function inv(id)
 end
 
 for i = 1, totalBuy do
-    -- Buy the item
     SendPacket(2, "action|buy\nitem|buy_geigercounter")
     Sleep(200)
     for _, item in pairs(items) do

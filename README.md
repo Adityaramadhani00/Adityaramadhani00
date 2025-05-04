@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Adityaramadhani00
-- 👀 I’m interested in TikTok
+- 👀 I’m interested lua
 - 🌱 I’m currently learning lua
 - 💞️ I’m looking to collaborate on Tiktok
 - 📫 How to reach me Discord

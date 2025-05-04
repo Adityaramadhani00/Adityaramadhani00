@@ -1,21 +1,20 @@
 -- [Buy cooking pack and drop]
 totalBuy = 10
 
-
-
---[Main Script]--
-Var0 = "OnDialogRequest"
-Var1 = [[set_default_color|`w
-add_label_with_icon|small|`8Rinuc community|left|2918|
+SendVariantList({[0] = "OnDialogRequest", [1] = [[
+set_default_color|`w
+add_label_with_icon|small|`8Rinuc Community|left|2918|
+add_spacer|small|
+add_label_with_icon|small|`5VIP `b- `5Free Scripts CPS|left|11550|
+add_label_with_icon|small|`eGL `b- `2BotHax `b- `8GPai|left|11550|
+add_label_with_icon|small|`6Report Bug Script|left|11550|
+add_label_with_icon|small|`3Request Script|left|11550|
+add_label_with_icon|small|`8Learn Script|left|1550|
 add_spacer|small|
 add_url_button||`qDiscord``|NOFLAGS|https://discord.gg/pgTRCQ43|`$Rinuc Community.|0|0|
 add_smalltext|`9Need more scripts?!Join now!|
-add_quick_exit|]]
-if NewVersionBothax then
-	SendVariantList({[0] = Var0, [1] = Var1})
-else
-	SendVariant({[0] = Var0, [1] = Var1})
-end
+add_quick_exit|]]})
+
 
 
 
@@ -56,5 +55,5 @@ for i = 1, totalBuy do
     end
 end
 
-LogToConsole("DONE")
+LogToConsole("`8Rowr")
 

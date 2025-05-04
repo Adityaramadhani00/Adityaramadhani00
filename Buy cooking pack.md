@@ -1,6 +1,32 @@
 -- [Buy cooking pack and drop]
 totalBuy = 10
 
+
+
+--[Main Script]--
+Var0 = "OnDialogRequest"
+Var1 = [[set_default_color|`w
+add_label_with_icon|small|`8Rinuc community|left|2918|
+add_spacer|small|
+add_url_button||`qDiscord``|NOFLAGS|https://discord.gg/pgTRCQ43|`$Rinuc Community.|0|0|
+add_smalltext|`9Need more scripts?!Join now!|
+add_quick_exit|]]
+if NewVersionBothax then
+	SendVariantList({[0] = Var0, [1] = Var1})
+else
+	SendVariant({[0] = Var0, [1] = Var1})
+end
+
+
+
+
+
+
+
+
+
+
+
 items = {962, 4602, 4588, 4568, 4570}
 trashs = {4562, 4564, 4572, 4676, 4578, 4582, 4618, 4666, 4672, 4766, 822, 868, 874, 956}
 

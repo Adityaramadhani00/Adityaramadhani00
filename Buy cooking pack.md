@@ -14,7 +14,7 @@ function inv(id)
 end
 
 for i = 1, totalBuy do
-    SendPacket(2, "action|buy\nitem|buy_geigercounter")
+    SendPacket(2, "action|buy\nitem|buy_cookingpack")
     Sleep(200)
     for _, item in pairs(items) do
         if inv(item) >= 200 then

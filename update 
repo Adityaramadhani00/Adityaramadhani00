@@ -17,47 +17,6 @@ add_quick_exit|]]})
 
 
 
-local function findItem(id)
-    count = 0
-    for _, inv in pairs(GetInventory()) do
-        if inv.id == id then
-            count = count + inv.amount
-        end
-    end
-    return count
-end
-
-local function scanObject(id)
-    count = 0
-    for _, object in pairs(GetObjectList()) do
-        if object.id == id then
-            count = count + object.amount
-        end
-    end
-    return count
-end
-
-local function dropPacks()
-    GetX, GetY = math.floor(GetLocal().pos.x / 32), math.floor(GetLocal().pos.y / 32)
-    for _, packList in pairs(itemList) do
-        if findItem(packList) >= 1 then
-            SendPacket(2,"action|dialog_return\ndialog_name|drop\nitem_drop|".. packList .."|\nitem_count|".. findItem(packList))
-            Sleep(250)
-            LogToConsole(GetItemInfo(packList).name ..": `2".. scanObject(packList))
-        end
-    end
-    
-    if moveTrue then
-        FindPath(GetX + 1, GetY, 60)
-        moveTrue = false
-    end
-end
-
-
-
-
-
-
 
 
 

@@ -1,5 +1,5 @@
-```ERROR? Benerin Sendiri```
-```Config = {
+
+Config = {
 Tree_ID = 8773,
 TakeSeed_X = 86,
 TakeSeed_Y = 1,

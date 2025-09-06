@@ -48,7 +48,7 @@ end
 
 function plant()
     for y = 1, 54 do
-        for x = 0, 99 do
+        for x = 0, 93 do
             if GetItemCount(Config.Tree_ID) == 0 then
                 return -- Out of seeds, go get more
             end

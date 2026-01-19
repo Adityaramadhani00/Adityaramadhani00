@@ -1,0 +1,20 @@
+"cr":{
+   "name":"konoha city emoire",
+   "seed":"",
+   "size":12,
+   "bmp":"",
+   "maps":[
+     0,0,2,
+     2,0,0,
+     0,2,2,
+     0,4,2,
+     4,0,2,
+     2,2,2,
+     2,4,2,
+     4,2,2,
+     4,4,2
+ ],
+ "terrain":true,
+ "decoration":true,
+ "trees":true
+}
